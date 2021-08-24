@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C24D38A326D53690009331A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D38A226D53690009331A2 /* AppDelegate.swift */; };
+		C24D38A626D53690009331A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24D38A426D53690009331A2 /* Main.storyboard */; };
+		C24D38A826D53690009331A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D38A726D53690009331A2 /* ViewController.swift */; };
+		C24D38AA26D53692009331A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24D38A926D53692009331A2 /* Assets.xcassets */; };
+		C24D38B126D53692009331A2 /* GDark Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C24D38B026D53692009331A2 /* GDark Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C24D38B626D53692009331A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24D38B526D53692009331A2 /* Cocoa.framework */; };
+		C24D38B926D53692009331A2 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D38B826D53692009331A2 /* SafariWebExtensionHandler.swift */; };
+		C24D38BC26D53692009331A2 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = C24D38BB26D53692009331A2 /* _locales */; };
+		C24D38BE26D53692009331A2 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C24D38BD26D53692009331A2 /* images */; };
+		C24D38C026D53692009331A2 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = C24D38BF26D53692009331A2 /* manifest.json */; };
+		C24D38C226D53692009331A2 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = C24D38C126D53692009331A2 /* background.js */; };
+		C24D38C426D53692009331A2 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = C24D38C326D53692009331A2 /* content.js */; };
+		C24D38C626D53692009331A2 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = C24D38C526D53692009331A2 /* popup.html */; };
+		C24D38C826D53692009331A2 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = C24D38C726D53692009331A2 /* popup.css */; };
+		C24D38CA26D53692009331A2 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = C24D38C926D53692009331A2 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C24D38B226D53692009331A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24D389626D53690009331A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C24D38AF26D53692009331A2;
+			remoteInfo = "GDark Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C24D38D226D53692009331A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C24D38B126D53692009331A2 /* GDark Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C24D389E26D53690009331A2 /* GDark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24D38A126D53690009331A2 /* GDark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GDark.entitlements; sourceTree = "<group>"; };
+		C24D38A226D53690009331A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C24D38A526D53690009331A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C24D38A726D53690009331A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C24D38A926D53692009331A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C24D38AB26D53692009331A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C24D38B026D53692009331A2 /* GDark Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GDark Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24D38B526D53692009331A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C24D38B826D53692009331A2 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		C24D38BB26D53692009331A2 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		C24D38BD26D53692009331A2 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		C24D38BF26D53692009331A2 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		C24D38C126D53692009331A2 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		C24D38C326D53692009331A2 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		C24D38C526D53692009331A2 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		C24D38C726D53692009331A2 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		C24D38C926D53692009331A2 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		C24D38CB26D53692009331A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C24D38CC26D53692009331A2 /* GDark_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GDark_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C24D389B26D53690009331A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C24D38AD26D53692009331A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24D38B626D53692009331A2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C24D389526D53690009331A2 = {
+			isa = PBXGroup;
+			children = (
+				C24D38A026D53690009331A2 /* GDark */,
+				C24D38B726D53692009331A2 /* GDark Extension */,
+				C24D38B426D53692009331A2 /* Frameworks */,
+				C24D389F26D53690009331A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C24D389F26D53690009331A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C24D389E26D53690009331A2 /* GDark.app */,
+				C24D38B026D53692009331A2 /* GDark Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24D38A026D53690009331A2 /* GDark */ = {
+			isa = PBXGroup;
+			children = (
+				C24D38A126D53690009331A2 /* GDark.entitlements */,
+				C24D38A226D53690009331A2 /* AppDelegate.swift */,
+				C24D38A426D53690009331A2 /* Main.storyboard */,
+				C24D38A726D53690009331A2 /* ViewController.swift */,
+				C24D38A926D53692009331A2 /* Assets.xcassets */,
+				C24D38AB26D53692009331A2 /* Info.plist */,
+			);
+			path = GDark;
+			sourceTree = "<group>";
+		};
+		C24D38B426D53692009331A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C24D38B526D53692009331A2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C24D38B726D53692009331A2 /* GDark Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C24D38B826D53692009331A2 /* SafariWebExtensionHandler.swift */,
+				C24D38CB26D53692009331A2 /* Info.plist */,
+				C24D38CC26D53692009331A2 /* GDark_Extension.entitlements */,
+				C24D38BA26D53692009331A2 /* Resources */,
+			);
+			path = "GDark Extension";
+			sourceTree = "<group>";
+		};
+		C24D38BA26D53692009331A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C24D38BB26D53692009331A2 /* _locales */,
+				C24D38BD26D53692009331A2 /* images */,
+				C24D38BF26D53692009331A2 /* manifest.json */,
+				C24D38C126D53692009331A2 /* background.js */,
+				C24D38C326D53692009331A2 /* content.js */,
+				C24D38C526D53692009331A2 /* popup.html */,
+				C24D38C726D53692009331A2 /* popup.css */,
+				C24D38C926D53692009331A2 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C24D389D26D53690009331A2 /* GDark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C24D38D326D53692009331A2 /* Build configuration list for PBXNativeTarget "GDark" */;
+			buildPhases = (
+				C24D389A26D53690009331A2 /* Sources */,
+				C24D389B26D53690009331A2 /* Frameworks */,
+				C24D389C26D53690009331A2 /* Resources */,
+				C24D38D226D53692009331A2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C24D38B326D53692009331A2 /* PBXTargetDependency */,
+			);
+			name = GDark;
+			productName = GDark;
+			productReference = C24D389E26D53690009331A2 /* GDark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C24D38AF26D53692009331A2 /* GDark Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C24D38CF26D53692009331A2 /* Build configuration list for PBXNativeTarget "GDark Extension" */;
+			buildPhases = (
+				C24D38AC26D53692009331A2 /* Sources */,
+				C24D38AD26D53692009331A2 /* Frameworks */,
+				C24D38AE26D53692009331A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDark Extension";
+			productName = "GDark Extension";
+			productReference = C24D38B026D53692009331A2 /* GDark Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C24D389626D53690009331A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C24D389D26D53690009331A2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C24D38AF26D53692009331A2 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = C24D389926D53690009331A2 /* Build configuration list for PBXProject "GDark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C24D389526D53690009331A2;
+			productRefGroup = C24D389F26D53690009331A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C24D389D26D53690009331A2 /* GDark */,
+				C24D38AF26D53692009331A2 /* GDark Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C24D389C26D53690009331A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24D38AA26D53692009331A2 /* Assets.xcassets in Resources */,
+				C24D38A626D53690009331A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C24D38AE26D53692009331A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24D38C226D53692009331A2 /* background.js in Resources */,
+				C24D38C826D53692009331A2 /* popup.css in Resources */,
+				C24D38C626D53692009331A2 /* popup.html in Resources */,
+				C24D38BE26D53692009331A2 /* images in Resources */,
+				C24D38C026D53692009331A2 /* manifest.json in Resources */,
+				C24D38BC26D53692009331A2 /* _locales in Resources */,
+				C24D38C426D53692009331A2 /* content.js in Resources */,
+				C24D38CA26D53692009331A2 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C24D389A26D53690009331A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24D38A826D53690009331A2 /* ViewController.swift in Sources */,
+				C24D38A326D53690009331A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C24D38AC26D53692009331A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24D38B926D53692009331A2 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C24D38B326D53692009331A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C24D38AF26D53692009331A2 /* GDark Extension */;
+			targetProxy = C24D38B226D53692009331A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C24D38A426D53690009331A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C24D38A526D53690009331A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C24D38CD26D53692009331A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C24D38CE26D53692009331A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C24D38D026D53692009331A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GDark Extension/GDark_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85N3S3DG8M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "GDark Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.justinbush.GDark.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C24D38D126D53692009331A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GDark Extension/GDark_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85N3S3DG8M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "GDark Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.justinbush.GDark.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C24D38D426D53692009331A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GDark/GDark.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85N3S3DG8M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = GDark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.justinbush.GDark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C24D38D526D53692009331A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GDark/GDark.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 85N3S3DG8M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = GDark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.justinbush.GDark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C24D389926D53690009331A2 /* Build configuration list for PBXProject "GDark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24D38CD26D53692009331A2 /* Debug */,
+				C24D38CE26D53692009331A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C24D38CF26D53692009331A2 /* Build configuration list for PBXNativeTarget "GDark Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24D38D026D53692009331A2 /* Debug */,
+				C24D38D126D53692009331A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C24D38D326D53692009331A2 /* Build configuration list for PBXNativeTarget "GDark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C24D38D426D53692009331A2 /* Debug */,
+				C24D38D526D53692009331A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C24D389626D53690009331A2 /* Project object */;
+}
